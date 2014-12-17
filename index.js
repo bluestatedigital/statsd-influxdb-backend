@@ -1,6 +1,5 @@
 "use strict";
 
-// https://github.com/bencevans/node-influx
 var influx = require("influx");
 
 function InfluxBackend(startupTime, config, emitter, logger) {

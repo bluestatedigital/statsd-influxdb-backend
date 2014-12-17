@@ -26,8 +26,8 @@ var config = {
             }
         ],
 
-        username: "dbuser",
-        password: "f4ncyp4ass",
+        username: "root",
+        password: "root",
         database: "my_database"
     }
 };
@@ -42,7 +42,7 @@ describe("InfluxDB backend", function() {
         statsdEvents = new events.EventEmitter();
         
         influxMock = sinon.mock(InfluxAPI);
-        influxModuleStub = sinon.stub().returns(influxMock.object); // huh?
+        influxModuleStub = sinon.stub().returns(influxMock.object);
         
         backend = proxyquire("..", {
             "influx": influxModuleStub,

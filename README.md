@@ -65,8 +65,8 @@ statsd config:
                 host : "localhost",
                 port : 8086
             }],
-            username : "dbuser",
-            password : "f4ncyp4ass",
+            username : "root",
+            password : "root",
             database : "my_database"
         }
     }
